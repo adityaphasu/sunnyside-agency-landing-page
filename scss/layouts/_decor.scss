@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.decor {
+  @include grid-col(2, 0.5fr);
+
+  @include mq(large) {
+    @include grid-col(4, 0.5fr);
+  }
+}

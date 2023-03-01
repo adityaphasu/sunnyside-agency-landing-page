@@ -1,0 +1,59 @@
+@use "../abstracts" as *;
+
+.testimonials {
+  padding: 4rem 1.5rem 5.5rem;
+
+  @include mq(large) {
+    padding: 9.8rem 9.5rem 10.15rem;
+    &__grid {
+      @include grid-col(3, 1fr);
+      gap: 2.2rem;
+    }
+  }
+
+  &__heading {
+    font-size: 1rem;
+    color: $grayish-blue;
+    text-transform: uppercase;
+    letter-spacing: 0.2813rem;
+
+    @include mq(large) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__content {
+    color: $very-dark-grayish-blue;
+    padding-top: 4.0625rem;
+
+    @include mq(large) {
+      padding-top: 5.06rem;
+    }
+  }
+
+  &__text {
+    padding-block: 2.5rem;
+
+    @include mq(large) {
+      padding-block: 3.5rem 4.5rem;
+    }
+  }
+
+  &__img {
+    margin: auto;
+    width: 4.5rem;
+    border-radius: 50%;
+  }
+
+  &__name {
+    @include bold-text;
+  }
+
+  &__designation {
+    font-size: 0.85rem;
+    color: $grayish-blue;
+    @include mq(large) {
+      padding-top: 1rem;
+    }
+  }
+}

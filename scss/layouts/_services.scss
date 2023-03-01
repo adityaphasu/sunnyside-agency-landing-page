@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+.services {
+  @include mq(large) {
+    @include grid-col(2, 1fr);
+  }
+
+  &__content {
+    font-size: 1rem;
+    padding: 24.7rem 1.3rem 4.125rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mq(large) {
+      padding: 23.6rem 11.5rem 4.5rem;
+    }
+
+    &:nth-child(1) {
+      color: $dark-desaturated-cyan;
+      background-image: url("../assets/images/mobile/image-graphic-design.jpg");
+
+      @include mq(large) {
+        background-image: url("../assets/images/desktop/image-graphic-design.jpg");
+      }
+    }
+
+    &:nth-child(2) {
+      color: $dark-blue;
+      background-image: url("../assets/images/mobile/image-photography.jpg");
+
+      @include mq(large) {
+        background-image: url("../assets/images/desktop/image-photography.jpg");
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 1.85rem;
+    padding-block: 0 2.25rem;
+
+    @include mq(large) {
+      padding-block: 1rem;
+    }
+  }
+}

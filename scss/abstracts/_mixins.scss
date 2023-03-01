@@ -1,0 +1,43 @@
+@use "./variables" as *;
+
+@mixin grid-col($value1, $value2) {
+  display: grid;
+  grid-template-columns: repeat($value1, $value2);
+}
+
+@mixin transition-ease-in-out($property) {
+  transition: $property 500ms ease-in-out;
+}
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin bold-text {
+  font-family: $font-family2;
+  font-weight: $fw--900;
+  color: $very-dark-desaturated-blue;
+}
+
+@mixin link-after($bg-color) {
+  content: "";
+  display: block;
+  height: 0.625rem;
+  width: 110%;
+  background-color: $bg-color;
+  border-radius: 1.5625rem;
+  position: absolute;
+  left: -0.3125rem;
+  bottom: -0.0625rem;
+  opacity: 0.2;
+}
+
+@mixin mq($key) {
+  $size: map-get($breakpoints, $key);
+
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}

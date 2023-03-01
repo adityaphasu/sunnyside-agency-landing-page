@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+body {
+  font-family: $font-family1;
+  font-size: 1.125rem;
+  background-color: $off-white;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-family2;
+  font-weight: $fw--900;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="Sunnyside landing page promoting its services" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <title>Sunnyside agency landing page</title>
+    <link rel="stylesheet" href="scss/main.scss" />
+  </head>
+
+  <body>
+    <!-- ===================== HEADER ======================== -->
+    <header class="header">
+      <!-- ===================== Navbar ======================== -->
+      <nav class="navbar header__navbar">
+        <a href="#" aria-label="Sunnyside" class="navbar__brand">
+          <img src="./assets/images/logo.svg" alt="Sunnyside" class="navbar__logo header__logo" />
+        </a>
+        <ul class="navbar__list header__list">
+          <li class="navbar__item">
+            <a href="#about" class="navbar__link">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__link">Services</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link navbar__link--big">Contact</a>
+          </li>
+        </ul>
+        <div class="navbar__hamburger">
+          <img src="./assets/images/icon-hamburger.svg" alt="" />
+        </div>
+      </nav>
+
+      <div class="header__container">
+        <h1 class="header__heading">We are creatives</h1>
+        <img src="./assets/images/icon-arrow-down.svg" alt="" class="header__arrow" />
+      </div>
+    </header>
+
+    <!-- ===================== MAIN ======================== -->
+    <main>
+      <!-- ===================== About ======================== -->
+      <section class="about" id="about">
+        <div>
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/images/desktop/image-transform.jpg" />
+            <img src="./assets/images/mobile/image-transform.jpg" alt="egg" />
+          </picture>
+        </div>
+        <div class="about__text">
+          <h2 class="about__heading">Transform your brand</h2>
+          <p class="about__subtext">
+            We are a full-service creative agency specializing in helping brands grow fast. Engage
+            your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <a href="#" class="about__link">Learn more</a>
+        </div>
+
+        <div>
+          <picture>
+            <source
+              media="(min-width: 1024px )"
+              srcset="./assets/images/desktop/image-stand-out.jpg" />
+            <img src="./assets/images/mobile/image-stand-out.jpg" alt="egg" />
+          </picture>
+        </div>
+        <div class="about__text">
+          <h2 class="about__heading">Stand out to the right audience</h2>
+          <p class="about__subtext">
+            Using a collaborative formula of designers, researchers, photographers, videographers,
+            and copywriters, we’ll build and extend your brand in digital places.
+          </p>
+          <a href="#" class="about__link about__link--red">Learn more</a>
+        </div>
+      </section>
+
+      <!-- ===================== Services ======================== -->
+      <section class="services" id="services">
+        <div class="services__content">
+          <h2 class="services__heading">Graphic Design</h2>
+          <p class="services__text">
+            Great design makes you memorable. We deliver artwork that underscores your brand message
+            and captures potential clients’ attention.
+          </p>
+        </div>
+        <div class="services__content">
+          <h2 class="services__heading">Photography</h2>
+          <p class="services__text">
+            Increase your credibility by getting the most stunning, high-quality photos that improve
+            your business image.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===================== Testimonials ======================== -->
+      <section class="testimonials">
+        <h3 class="testimonials__heading">Client testimonials</h3>
+
+        <div class="testimonials__grid">
+          <div class="testimonials__content">
+            <img src="./assets/images/image-emily.jpg" alt="emily" class="testimonials__img" />
+            <p class="testimonials__text">
+              We put our trust in Sunnyside and they delivered, making sure our needs were met and
+              deadlines were always hit.
+            </p>
+            <div class="tesimonials__person">
+              <p class="testimonials__name">Emily R.</p>
+              <p class="testimonials__designation">Marketing Director</p>
+            </div>
+          </div>
+
+          <div class="testimonials__content">
+            <img src="./assets/images/image-thomas.jpg" alt="thomas" class="testimonials__img" />
+            <p class="testimonials__text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it
+              a satisfying and enjoyable experience.
+            </p>
+            <div class="tesimonials__person">
+              <p class="testimonials__name">Thomas S.</p>
+              <p class="testimonials__designation">Chief Operating Officer</p>
+            </div>
+          </div>
+
+          <div class="testimonials__content">
+            <img src="./assets/images/image-jennie.jpg" alt="jennie" class="testimonials__img" />
+            <p class="testimonials__text">
+              Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+              Highly recommended!
+            </p>
+            <div class="tesimonials__person">
+              <p class="testimonials__name">Jennie F.</p>
+              <p class="testimonials__designation">Business Owner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Decor ======================== -->
+      <div class="decor">
+        <picture class="decor__picture">
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/images/desktop/image-gallery-milkbottles.jpg" />
+          <img src="./assets/images/mobile/image-gallery-milkbottles.jpg" alt="" />
+        </picture>
+        <picture class="decor__picture">
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/images/desktop/image-gallery-orange.jpg" />
+          <img src="./assets/images/mobile/image-gallery-orange.jpg" alt="" />
+        </picture>
+        <picture class="decor__picture">
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/images/desktop/image-gallery-cone.jpg" />
+          <img src="./assets/images/mobile/image-gallery-cone.jpg" alt=""" />
+        </picture>
+        <picture class="decor__picture">
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/images/desktop/image-gallery-sugarcubes.jpg" />
+          <img src="./assets/images/mobile/image-gallery-sugar-cubes.jpg" alt="" />
+        </picture>
+      </div>
+    </main>
+
+    <!-- ===================== FOOTER ======================== -->
+
+    <footer class="footer">
+      <nav class="navbar footer__navbar">
+        <a href="#" aria-label="Sunnyside" class="navbar__brand">
+          <img src="./assets/images/logo.svg" alt="Sunnyside" class="navbar__logo footer__logo" />
+        </a>
+        <ul class="navbar__list footer__list">
+          <li class="navbar__item">
+            <a href="#about" class="navbar__link footer__link">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__link footer__link">Services</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link footer__link">Projects</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__socials">
+        <a href="#" aria-label="Facebook">
+          <img src="./assets/images/icon-facebook.svg" alt="" class="footer__icon" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="./assets/images/icon-instagram.svg" alt="" class="footer__icon" />
+        </a>
+        <a href="#" aria-label="twitter">
+          <img src="./assets/images/icon-twitter.svg" alt="" class="footer__icon" />
+        </a>
+        <a href="#" aria-label="pinterest">
+          <img src="./assets/images/icon-pinterest.svg" alt="" class="footer__icon" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="./JS/index.js"></script>
+  </body>
+</html>

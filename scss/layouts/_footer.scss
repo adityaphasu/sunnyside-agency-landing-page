@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+.footer {
+  background-color: $light-cyan;
+  padding: 4.4375rem 2.25rem;
+
+  &__navbar {
+    display: block;
+  }
+
+  &__logo {
+    filter: brightness(0) saturate(100%) invert(39%) sepia(40%) saturate(548%) hue-rotate(116deg)
+      brightness(90%) contrast(89%);
+    margin: auto;
+    width: 11rem;
+  }
+
+  &__list {
+    padding-block: 2.625rem 5.6rem;
+  }
+
+  &__link {
+    color: $dark-moderate-cyan;
+    padding-inline: 2rem;
+    @include transition-ease-in-out(color);
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__socials {
+    @include flex(center, center);
+    gap: 1.9rem;
+  }
+
+  &__icon {
+    filter: invert(34%) sepia(6%) saturate(3757%) hue-rotate(118deg) brightness(106%) contrast(81%);
+    @include transition-ease-in-out(filter);
+    &:hover {
+      filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(38deg) brightness(106%) contrast(100%);
+    }
+  }
+}
