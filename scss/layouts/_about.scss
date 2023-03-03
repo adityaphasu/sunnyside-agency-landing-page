@@ -3,21 +3,24 @@
 .about {
   color: $dark-grayish-blue;
 
-  @include mq(large) {
+  @include mq(medium2) {
     text-align: left;
     @include grid-col(2, 1fr);
     align-items: center;
   }
 
   &__text {
-    padding: 4.6rem 1.5rem;
+    padding: 3.6rem 1.5rem;
 
-    @include mq(large) {
-      padding: 4.6rem 8rem;
-
+    @include mq(medium2) {
+      padding: 1.6rem 4.4rem;
       &:nth-child(2) {
         grid-row: 1;
       }
+    }
+
+    @include mq(large) {
+      padding: 3.6rem 8rem;
     }
   }
 
@@ -25,7 +28,7 @@
     font-size: 2rem;
     color: $very-dark-desaturated-blue;
 
-    @include mq(large) {
+    @include mq(medium2) {
       font-size: 2.7rem;
     }
   }
@@ -33,7 +36,7 @@
   &__subtext {
     padding-block: 2.1rem;
 
-    @include mq(large) {
+    @include mq(medium2) {
       padding-block: 2.5rem;
     }
   }

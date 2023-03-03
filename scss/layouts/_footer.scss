@@ -21,7 +21,7 @@
 
   &__link {
     color: $dark-moderate-cyan;
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
     @include transition-ease-in-out(color);
 
     &:hover {

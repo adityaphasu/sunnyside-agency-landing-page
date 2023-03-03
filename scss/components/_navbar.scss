@@ -11,7 +11,7 @@
   &__link {
     color: $dark-grayish-blue;
 
-    @include mq(large) {
+    @include mq(medium2) {
       color: $white;
       @include transition-ease-in-out(color);
 
@@ -28,7 +28,7 @@
       padding: 1rem 1.5rem;
       border-radius: 3rem;
 
-      @include mq(large) {
+      @include mq(medium2) {
         background-color: $white;
         color: $black;
         font-size: 1rem;
@@ -46,7 +46,7 @@
   &__hamburger {
     cursor: pointer;
 
-    @include mq(large) {
+    @include mq(medium2) {
       display: none;
     }
   }
