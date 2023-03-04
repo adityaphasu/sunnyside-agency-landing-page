@@ -16,19 +16,19 @@
     <!-- ===================== HEADER ======================== -->
     <header class="header">
       <!-- ===================== Navbar ======================== -->
-      <nav class="navbar header__navbar">
+      <nav class="navbar header__navbar" aria-label="main-navbar">
         <a href="#" aria-label="Sunnyside" class="navbar__brand">
           <img src="./assets/images/logo.svg" alt="Sunnyside" class="navbar__logo header__logo" />
         </a>
         <ul class="navbar__list header__list">
           <li class="navbar__item">
-            <a href="#about" class="navbar__link">About</a>
+            <a href="#about" class="navbar__link navbar__link--underline">About</a>
           </li>
           <li class="navbar__item">
-            <a href="#services" class="navbar__link">Services</a>
+            <a href="#services" class="navbar__link navbar__link--underline">Services</a>
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Projects</a>
+            <a href="#" class="navbar__link navbar__link--underline">Projects</a>
           </li>
           <li class="navbar__item">
             <a href="#" class="navbar__link navbar__link--big">Contact</a>
@@ -63,7 +63,12 @@
             We are a full-service creative agency specializing in helping brands grow fast. Engage
             your clients through compelling visuals that do most of the marketing for you.
           </p>
-          <a href="#" class="about__link">Learn more</a>
+          <div class="about__container">
+            <a href="#" class="about__link">
+              Learn more
+              <img src="./assets/images/arrow-next-right.svg" alt="" class="about__arrow" />
+            </a>
+          </div>
         </div>
 
         <div>
@@ -80,7 +85,12 @@
             Using a collaborative formula of designers, researchers, photographers, videographers,
             and copywriters, we’ll build and extend your brand in digital places.
           </p>
-          <a href="#" class="about__link about__link--red">Learn more</a>
+          <div class="about__container">
+            <a href="#" class="about__link about__link--red">
+              Learn more
+              <img src="./assets/images/arrow-next-right.svg" alt="" class="about__arrow" />
+            </a>
+          </div>
         </div>
       </section>
 
@@ -177,7 +187,7 @@
     <!-- ===================== FOOTER ======================== -->
 
     <footer class="footer">
-      <nav class="navbar footer__navbar">
+      <nav class="navbar footer__navbar" aria-label="footer-navbar">
         <a href="#" aria-label="Sunnyside" class="navbar__brand">
           <img src="./assets/images/logo.svg" alt="Sunnyside" class="navbar__logo footer__logo" />
         </a>
