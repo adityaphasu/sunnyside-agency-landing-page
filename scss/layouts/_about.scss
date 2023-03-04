@@ -41,7 +41,16 @@
     }
   }
 
+  &__container {
+    @include flex(center, center);
+
+    @include mq(medium2) {
+      justify-content: flex-start;
+    }
+  }
+
   &__link {
+    @include flex(null, center);
     @include bold-text;
     text-transform: uppercase;
     position: relative;
@@ -55,9 +64,23 @@
       @include link-after($soft-red);
     }
 
-    &:hover::after {
-      bottom: -40%;
-      opacity: 0.7;
+    &:hover {
+      .about__arrow {
+        transform: translateX(0.3125rem);
+        opacity: 1;
+      }
+
+      &:after {
+        bottom: -40%;
+        opacity: 0.7;
+      }
     }
+  }
+
+  &__arrow {
+    margin-left: 0.5rem;
+    opacity: 0;
+    transform: translateX(-0.3125rem);
+    @include transition-ease-in-out(all);
   }
 }
