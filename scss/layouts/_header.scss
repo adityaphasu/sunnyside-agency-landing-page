@@ -9,7 +9,7 @@
 
   @include mq(medium2) {
     background-image: url("../assets/images/desktop/image-header.jpg");
-    padding: 2.9rem 3.1rem 21rem 2.5rem;
+    padding: 2rem 3.1rem 20rem 2.5rem;
 
     &__logo {
       min-width: 10.5rem;

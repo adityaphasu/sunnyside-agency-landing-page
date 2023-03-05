@@ -7,13 +7,13 @@
 
   &__content {
     font-size: 1rem;
-    padding: 24.7rem 1.3rem 4.125rem;
+    padding: 24.7rem 0 4.125rem;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
     @include mq(large) {
-      padding: 23.6rem 11.5rem 4.5rem;
+      padding: 23.6rem 0 4.5rem;
     }
 
     &:nth-child(1) {
@@ -42,5 +42,10 @@
     @include mq(medium2) {
       padding-block: 1rem;
     }
+  }
+
+  &__text {
+    width: 22rem;
+    margin: auto;
   }
 }
