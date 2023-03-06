@@ -16,10 +16,17 @@
     <!-- ===================== HEADER ======================== -->
     <header class="header">
       <!-- ===================== Navbar ======================== -->
-      <nav class="navbar header__navbar" aria-label="main-navbar">
+      <nav class="navbar header__navbar" aria-label="primary-navigation">
         <a href="#" aria-label="Sunnyside" class="navbar__brand">
           <img src="./assets/images/logo.svg" alt="Sunnyside" class="navbar__logo header__logo" />
         </a>
+
+        <button class="navbar__hamburger" aria-label="Main-menu">
+          <span class="navbar__line"></span>
+          <span class="navbar__line"></span>
+          <span class="navbar__line"></span>
+        </button>
+
         <ul class="navbar__list header__list">
           <li class="navbar__item">
             <a href="#about" class="navbar__link navbar__link--underline">About</a>
@@ -34,9 +41,6 @@
             <a href="#" class="navbar__link navbar__link--big">Contact</a>
           </li>
         </ul>
-        <div class="navbar__hamburger">
-          <img src="./assets/images/icon-hamburger.svg" alt="" />
-        </div>
       </nav>
 
       <div class="header__container">
@@ -187,7 +191,7 @@
     <!-- ===================== FOOTER ======================== -->
 
     <footer class="footer">
-      <nav class="navbar footer__navbar" aria-label="footer-navbar">
+      <nav class="navbar footer__navbar" aria-label="secondary-navigation">
         <a href="#" aria-label="Sunnyside" class="navbar__brand">
           <img src="./assets/images/logo.svg" alt="Sunnyside" class="navbar__logo footer__logo" />
         </a>

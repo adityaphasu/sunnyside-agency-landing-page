@@ -34,6 +34,17 @@
   opacity: 0.2;
 }
 
+@mixin hamburger-border-before {
+  content: "";
+  position: absolute;
+  top: -0.15rem;
+  left: -0.625rem;
+  width: 45px;
+  height: 45px;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
 @mixin mq($key) {
   $size: map-get($breakpoints, $key);
 
